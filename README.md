@@ -14,10 +14,11 @@ The Red background color will show present time.
 The Green background color will show future times.
 
 <br>
-<br>
-*Link to Work Day Scheduler* <br>
+
+#Link 
+
 [Work Day Scheduler](https://bulkacity.github.io/WorkDayScheduler/)
-<br>
+
 <br>
 ### Screenshot
 
