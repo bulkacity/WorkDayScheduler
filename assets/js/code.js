@@ -74,14 +74,13 @@ hourByhour.forEach(function(timeBlock,index){
 		'">' +
 		timeBlock.event +
 		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fas fa-save"></i></button></div></div></div>';
-
-	/* Adding rows to container div */
-	$(".container").append(rowEach);
+	
+		$(".container").append(rowEach);
             
     
 });
 
-/* Color rows based on current time */
+// The following will check against the times in respect to each other
 function colorRow(time) {
 	var planNow = moment(instant, "dd H A");
 	var planEntry = moment(time, "dd H A");
@@ -94,7 +93,7 @@ function colorRow(time) {
 	}
 }
 
-/* Save Events */
+// adding an event listener for the save button 
 $(".saveBtn").on("click", function() {
 	var blockID = parseInt(
 		$(this)
@@ -109,6 +108,6 @@ $(".saveBtn").on("click", function() {
 	);
 	hourByhour[blockID].event = userEntry;
 
-	/* Set local storage */
+	// send the JSON file to the local storage.
 	localStorage.setItem("workDayOpened", JSON.stringify(hourByhour));
 });
