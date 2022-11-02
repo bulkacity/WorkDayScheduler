@@ -16,7 +16,7 @@ The Green background color will show future times.
 <br>
 <br>
 *Link to Work Day Scheduler* <br>
-[Work Day Scheduler](https://fondofhats.github.io/workday-scheduler/)
+[Work Day Scheduler](https://bulkacity.github.io/WorkDayScheduler/)
 <br>
 <br>
 ### Screenshot
